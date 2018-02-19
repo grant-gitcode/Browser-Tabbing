@@ -1,1 +1,1 @@
-To use, simply hold down shift. Then scroll. You should cycle through tabs based on the direction you scroll. Enjoy!
+To enter tab scrolling mode, press Shift+Alt. To exit tab scrolling mode, press Shift+Alt+Z. Strictly speaking, you don't have to have Shift+Alt pressed to scroll through tabs after the first time you press it. However, it is more convenient if you do, and makes entering the Shift+Alt+Z command easier.
