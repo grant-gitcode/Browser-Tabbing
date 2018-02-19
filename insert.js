@@ -1,4 +1,4 @@
-var isKey;
+var isKey = false;
 
 //If the shift key is down, set isKey to true.
 window.addEventListener("keydown", function(key) {
