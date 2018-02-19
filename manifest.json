@@ -14,5 +14,5 @@
      "js": ["insert.js"]
    }
  ],
-   "permissions": ["tabs","activeTab"]
+   "permissions": ["tabs","activeTab","storage"]
 }

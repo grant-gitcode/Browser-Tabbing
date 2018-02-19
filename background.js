@@ -1,3 +1,5 @@
+chrome.storage.local.set({"isKey" : false});
+
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   //Gets currently active tab.
   chrome.tabs.query({"active" : true, "lastFocusedWindow" : true}, function(tabs) {
