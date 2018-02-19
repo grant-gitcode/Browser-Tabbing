@@ -1,13 +1,8 @@
-var isKey = false;
-
-//If the shift key is down, set isKey to true.
+//If the shift and alt keys are down, set isKey to true, entering tab scrolling mode.
 window.addEventListener("keydown", function(key) {
-  chrome.storage.local.set({"isKey" : key.shiftKey});
-});
-
-//If a key is released, set isKey to false.
-window.addEventListener("keyup", function(key) {
-  chrome.storage.local.set({"isKey" : false});
+  if(key.shiftKey && key.altKey) {
+    chrome.storage.local.set({"isKey" : true});
+  }
 });
 
 //On scroll, get the value of isKey, check if there is wheel movement, and isKey is true.

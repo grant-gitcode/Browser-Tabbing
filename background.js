@@ -18,3 +18,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     }
   });
 });
+
+//We receive the command to exit from tab scrolling mode.
+chrome.commands.onCommand.addListener(function(command) {
+  chrome.storage.local.set({"isKey" : false});
+});
